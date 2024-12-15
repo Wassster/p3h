@@ -46,11 +46,9 @@ public class Main {
         reiziger5.setAdres(adres5);
         adres5.setReiziger(reiziger5);
         reizigerDAO.save(reiziger5);
-
         List<Reiziger> allReizigers = reizigerDAO.findAll();
         for (Reiziger reiziger : allReizigers) {
             System.out.println(reiziger);
         }
-
     }
 }
